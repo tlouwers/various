@@ -2,7 +2,8 @@
 add_executable(TestRunner TestRunner.cpp)
 
 # Add flags to retrieve test coverage later
-add_compile_options(--coverage)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --coverage")
 
 # List of the sources and unit-test files
 target_sources(TestRunner

@@ -18,17 +18,5 @@ install(TARGETS ${PROJECT_NAME} DESTINATION lib)
 install(FILES ${project_includes} DESTINATION include)
 
 
-# If user indicates LinkTimeOptimizations should be used
-if( LINK_TIME_OPTIMIZATION )
-    # Check if the compiler supports it
-    include(CheckIPOSupported)
-    check_ipo_supported(RESULT lto_supported OUTPUT error)
-
-    # If it is supported, enable it
-    if( lto_supported )
-        message(STATUS "IPO / LTO enabled for " ${PROJECT_NAME})
-        set_property(TARGET ${PROJECT_NAME} PROPERTY INTERPROCEDURAL_OPTIMIZATION TRUE)
-    else()
-        message(STATUS "IPO / LTO not supported: <${error}>")
-    endif()
-endif()
+# Enable LinkTimeOptimizations, if requested
+link_time_optimization(LINK_TIME_OPTIMIZATION ${PROJECT_NAME})

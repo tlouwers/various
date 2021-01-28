@@ -9,6 +9,9 @@ set(CMAKE_CXX_STANDARD 14)              # Be able to compile C++14.
 set(CMAKE_CXX_STANDARD_REQUIRED ON)     # That C++14 is required.
 set(CMAKE_CXX_EXTENSIONS OFF)           # Do not enable compiler-specific extensions -- this means that GCC will be given -std=c++14 rather than -std=gnu++14.
 
+# Include function to use LinkTimeOptimization
+include (cmake_scripts/LinkTimeOptimization.cmake)
+
 # Include Google Test
 enable_testing()
 add_subdirectory(3rd-party/googletest)
