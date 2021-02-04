@@ -1,3 +1,12 @@
+/*
+ * \file    DummyClass2.hpp
+ *
+ * \class   DummyClass2
+ *
+ * \brief   Example class to showcase regular class inside library usage in
+ *          project.
+ */
+
 #ifndef DUMMYCLASS2_HPP_
 #define DUMMYCLASS2_HPP_
 

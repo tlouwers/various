@@ -1,2 +1,5 @@
 # Exclude build folder
 ExampleProject/build
+
+# Exclude doxygen generated folder
+ExampleProject/src/doxygen/docs

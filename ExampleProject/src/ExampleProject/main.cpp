@@ -1,10 +1,20 @@
 
+/************************************************************************/
+/* Includes                                                             */
+/************************************************************************/
 #include "DummyClass.hpp"
 #include "ExampleLibrary\DummyClass2.hpp"
 #include "SimpleProfiler.hpp"
 #include <iostream>
 
 
+/************************************************************************/
+/* Main application entry point                                         */
+/************************************************************************/
+/**
+ * \brief   Main application entry point.
+ * \returns Value 0.
+ */
 int main() {
     DummyClass dummyClass;
 

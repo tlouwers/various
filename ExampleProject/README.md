@@ -1,5 +1,5 @@
 # ExampleProject
-A C++ example project useful as base structure. It is based upon GCC (Mingw64), CMake and Google Test. It is intended to be used in Visual Studio Code. Note: for code coverage, install python, then GCov (pip install gcov).
+A C++ example project useful as base structure. It is based upon GCC (Mingw64), CMake and Google Test. It is intended to be used in Visual Studio Code. Note: for code coverage, install python, then GCov (pip install gcov). For documentation install doxygen and graphviz.
 
 It features:
  - A DummyClass as regular class/code.
@@ -8,3 +8,4 @@ It features:
  - Code coverage, provided with GCov.
  - A SimpleProfile code showcase, to measure performance of a scoped section, or a single method.
  - LinkTimeOptimization: default enable when building a Release.
+ - Doxygen documentation
