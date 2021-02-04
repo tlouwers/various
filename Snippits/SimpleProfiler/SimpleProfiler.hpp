@@ -3,6 +3,8 @@
  *
  * \licence None mentioned, ask origional author - see below.
  *
+ * \class   SimpleProfiler
+ *
  * \brief   Convenience template to be able to quickly measure a duration of a\
  *          specific code section or method.
  *
@@ -49,7 +51,9 @@
 #include <string>
 
 
-// Use a conditional to ensure a steady_clock.
+/**
+ * \brief   Use a conditional to ensure a steady_clock.
+ */
 using perf_clock = std::conditional<
     std::chrono::high_resolution_clock::is_steady,
     std::chrono::high_resolution_clock,

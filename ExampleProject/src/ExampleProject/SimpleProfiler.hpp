@@ -1,6 +1,8 @@
 /**
  * \file    SimpleProfiler.hpp
  *
+ * \licence None mentioned, ask origional author - see below.
+ *
  * \class   SimpleProfiler
  *
  * \brief   Convenience template to be able to quickly measure a duration of a\
