@@ -67,7 +67,7 @@ using perf_clock = std::conditional<
 template <typename TimeUnit = std::chrono::milliseconds>
 class SimpleProfiler final {
 public:
-    SimpleProfiler()  { mStart = perf_clock::now(); }
+    SimpleProfiler() : mStart(perf_clock::now()) {}
     ~SimpleProfiler() { PrintElapsed(); }
 
     TimeUnit Elapsed();
