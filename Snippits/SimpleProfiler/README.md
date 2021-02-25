@@ -1,9 +1,18 @@
+
 # SimpleProfiler
-Reference: https://github.com/sonnt174/Common/blob/master/time_measure.h
+Convenience template to be able to quickly measure a duration of a specific code section or method.
 
-This header file provides an easy means to measure execution time of a method or a scoped block. Output is written to std::cout.
+## Description
+This header file provides an easy means to measure execution time of a method or a scoped block. Although other tools may be more accurate, this gives a fair estimate of the duration of a specific item. Output is written to std::cout.
 
-Usage:
+## Requirements
+- C++11
+
+## Notes
+Code was originally created by <b>Sirn Nguyen Truong</b>, published here: <https://github.com/sonnt174/Common/blob/master/time_measure.h>. I just cleaned up the code a bit, added comments and examples.
+Use 'default' durations: nanoseconds, microseconds, milliseconds, seconds, minutes, hours. If nothing is used, then the default of milliseconds is taken.
+
+## Example
 ```cpp
 // For instance in main.cpp
 #include "SimpleProfiler.hpp"

@@ -1,7 +1,7 @@
 /**
  * \file    SimpleProfiler.hpp
  *
- * \licence None mentioned, ask origional author - see below.
+ * \licence None mentioned, ask origional author?
  *
  * \class   SimpleProfiler
  *
@@ -10,30 +10,7 @@
  *
  * \note    https://github.com/tlouwers/various/tree/master/Snippits/SimpleProfiler
  *
- * \details This code is intended to measure the duration os a method or scoped block.
- *          Although other tools may be more accurate, this gives a fair estimate of
- *          the duration of a specific item.
- *
- *          // Use as scoped segments:
- *          {
- *              SimpleProfiler<std::chrono::nanoseconds> prof;     // Starts time measurement
- *              mMyClass.MyMethodToProfile();
- *          }                                                      // Stops measurements when going out-of-scope and print to std::cout.
- *
- * \note    Use 'default' durations: nanoseconds, microseconds, milliseconds, seconds,
- *          minutes, hours. If nothing is used, then the default of milliseconds is
- *          taken.
- *
- * \note    If you happen to find an issue, and are able to provide a
- *          reproducible scenario I am happy to have a look. If you have a fix,
- *          or a refactoring that would improve the buffer please let me know
- *          so I can update the buffer.
- *
- * \note    Code was originally created by <b>Sirn Nguyen Truong</b>, published here:
- *          https://github.com/sonnt174/Common/blob/master/time_measure.h
- *
- *          I just cleaned up the code a bit, added comments and examples.
- *
+ * \author  Sirn Nguyen Truong (?)
  * \author  Terry Louwers (terry.louwers@fourtress.nl)
  * \version 1.0
  * \date    02-2021
