@@ -24,9 +24,9 @@ int LongMethod(int a) {
 }
 
 void main() {
-	int result = 0;
+    int result = 0;
     {
-	    // Inside a scoped block, create a profiler instance and specify the desired unit to express the elapsed time in (milliseconds here)
+        // Inside a scoped block, create a profiler instance and specify the desired unit to express the elapsed time in (milliseconds here)
         SimpleProfiler<std::chrono::milliseconds> prof;
         // Execute the method to profile
         result = LongMethod(12);
@@ -34,7 +34,7 @@ void main() {
     // At the end of the scoped section the duration is printed to std::cout
     // Ex: "Time elapsed = 234 milliseconds\n"
 
-	// The result of the long method is printed here
+    // The result of the long method is printed here
     std::cout << "Long method result: " << result << std::endl;
 }
 ```
